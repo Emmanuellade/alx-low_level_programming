@@ -7,6 +7,7 @@
  * main - Prints simple operations end resut.
  * @argc: The number of aprogram argument.
  * @argv: An array of pointers to the arguments.
+ *
  * Return: Always 0.
  */
 
