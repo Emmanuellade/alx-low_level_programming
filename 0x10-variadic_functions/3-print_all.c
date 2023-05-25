@@ -2,7 +2,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-/** print_all - prints all, @format: list of types of arguments given to the function */
+/** print_all - prints all, 
+ * @format: list of types of arguments given to the function 
+ */
 
 void print_all(const char * const format, ...)
 {
