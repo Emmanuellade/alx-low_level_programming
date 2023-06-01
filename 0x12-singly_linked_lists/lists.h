@@ -4,7 +4,7 @@
 
 /**
  * struct lists - singly linked list
- * @n: int
+ * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
