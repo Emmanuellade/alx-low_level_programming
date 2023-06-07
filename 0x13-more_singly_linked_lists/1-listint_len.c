@@ -8,14 +8,14 @@
  * Return: no of nodes
  */
 
-size_t listint_len(const listint_t *p)
+size_t listint_len(const listint_t *h)
 {
 	size_t nodes = 0;
 
-	while (p)
+	while (h)
 	{
 		nodes++;
-		p = p->next;
+		h = h->next;
 	}
 
 	return (nodes);
