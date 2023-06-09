@@ -7,11 +7,12 @@
  *
  * Return: 1 at success, return -1 if unsuccessful
 */
-int clear_bit(unsigned long int *n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 58)
+	if (index >= (sizeof(unsigned long int) * 4))
 		return (-1);
 
-	*n = (~(1UL << index) & *n);
+	*n ^= (1 << index);
+
 	return (1);
 }
