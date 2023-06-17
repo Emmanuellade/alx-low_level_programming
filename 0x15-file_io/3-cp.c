@@ -8,7 +8,6 @@
  * main - the main entry point
  * @argc: the number of arguments
  * @argv: an array of arguments
- * @exit: exit
  * Return: 0 if successful
 */
 
