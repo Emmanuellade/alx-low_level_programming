@@ -1,17 +1,23 @@
 section .data
-    message db "Hello, Holberton", 0
+   msg db "Hello, Holberton", 0
+   fmt db "%s", 10, 0
 
 section .text
-    extern printf
-    global main
+   extern printf
+   global main
 
 main:
-    ; Prepare arguments for printf function
-    mov edi, message
-    xor eax, eax
-    call printf
+   push rbp
 
-    ; Exit the program
-    mov eax, 60
-    xor edi, edi
-    syscall
+   mov rdi, fmt
+
+   mov rsi, msg
+
+   xor rax, rax
+
+   call printf
+
+   pop rbp
+
+   xor rax, rax
+   ret
